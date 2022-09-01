@@ -1,0 +1,4 @@
+rootProject.name = 'gradle-template'
+
+include("test-app1") // 测试
+include("test-module1") // 测试

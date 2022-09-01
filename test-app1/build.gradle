@@ -1,0 +1,11 @@
+plugins {
+    id "application"
+    id "com.gorylenko.gradle-git-properties"
+}
+dependencies {
+    implementation(project(":test-module1"))
+}
+application {
+    mainClassName = "io.github.gcdd1993.app.TestApplication"
+}
+apply from: "${rootDir}/gradle/docker.gradle"
